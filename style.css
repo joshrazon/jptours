@@ -113,7 +113,7 @@ ul li {
   justify-content: space-between;
   /* background-color: rgb(175, 175, 175); */
   margin-bottom: 8em;
-  
+
 }
 
 .card-outer {
@@ -153,7 +153,7 @@ ul li {
 
   max-width: 30ch;
 
-  
+
 }
 
 .card-text h3 {
@@ -211,10 +211,20 @@ ul li {
   display: flex;
   max-width: 80%;
 }
+.exp-img {
+  display: flex;
+}
+
+.exp-img img, .exp-container-reverse img {
+  max-width: 100%;
+}
+
 
 .exp-text {
-  flex-basis: 100%;
-  font-size: 2rem;
+  align-self: stretch;
+  justify-self: stretch;
+  width: 60ch;
+  font-size: 1.8rem;
 
   padding-left: 1em;
 
@@ -228,7 +238,7 @@ ul li {
 }
 .exp-text p {
   padding-top: 1em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   max-width: 40ch;
 }
 
@@ -279,10 +289,8 @@ ul li {
   margin-bottom: 6em;
 }
 
-
-
 /* TODO */
-/* Make Footer */
-/* Make It Responsive */
+/* Make It responsive */
+/* Create Footer */
 /* Add Animations */
-/* Clean up spaghetti code lmao  */
+/* Clean up spaghetti code */
