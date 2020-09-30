@@ -1,0 +1,288 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero & Nav*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+}
+
+nav img {
+  margin-left: 3rem;
+}
+
+ul {
+  display: flex;
+  flex-grow: 1;
+  list-style-type: none;
+  justify-content: flex-end;
+  color:rgb(236, 236, 236);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul li {
+  margin-right: 2rem;
+  font-size: 1.3rem;
+}
+
+
+
+.hero-section {
+  background-image: url(./img/hero-img2.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 6em;
+}
+
+.hero-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-family: 'Nova Square', cursive;
+  color: rgb(236, 236, 236);
+  text-shadow: 2px 5px black;
+  max-width: 50ch;
+}
+
+.hero-text span {
+  color: rgb(212, 2, 2);
+}
+
+/* Intro */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10em;
+  display: grid;
+  column-gap: 2em;
+  grid-template-columns: 15% 1fr 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+.services-text {
+  grid-column: 1/3;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  max-width: 50ch;
+}
+
+.services-text h1 {
+  margin-bottom: 1.2em;
+  padding-bottom: .5em;
+
+  border-bottom: 5px solid rgb(212, 2, 2);
+}
+
+.services-text p {
+  font-size: 1rem;
+}
+
+.services-img {
+  grid-column: 3/6;
+}
+
+.services-img img {
+  max-width: 100%;
+}
+
+/* Group */
+.deck {
+  min-width: 80%;
+  height: 66vh;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(175, 175, 175); */
+  margin-bottom: 8em;
+  
+}
+
+.card-outer {
+  /* background-color: grey; */
+  flex-basis: 31%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(119, 119, 119);
+  border-radius: 4px;
+
+  background-color: #F4F5F9;
+}
+
+.card {
+  background-position: center;
+  flex-basis: 40%;
+}
+
+.img1 {
+  background-image: url(./img/card1.jpg);
+}
+
+.img2{
+  background-image: url(./img/card2.jpg);
+}
+
+.img3{
+  background-image: url(./img/card3.jpg);
+}
+
+.card-text {
+  font-size: 1.4rem;
+  font-family: 'Open Sans', sans-serif;
+  margin: 1em 0.8em;
+  color: rgb(36, 36, 36);
+
+  max-width: 30ch;
+
+  
+}
+
+.card-text h3 {
+  color: rgb(212, 2, 2);
+} 
+
+.card-text p {
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
+
+.card-btn {
+  align-self: center;
+}
+
+.card-btn button {
+  font-size: 1.2rem;
+  margin: 1em 0.8em;
+  padding: .8em 1em;
+  border: 2px solid rgb(212, 2, 2);
+  background-color:  rgb(212, 2, 2);
+  border-radius: 4px;
+  color: white;
+}
+
+/* Experiences */
+
+.parallax {
+  width: 100%;
+  height: 30vh;
+  background-image: 
+  linear-gradient(
+    180deg, 
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)
+    ), 
+  url(./img/hero-img2.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 4em;
+}
+
+.parallax h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: 'Nova Square', cursive;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+/* Experiences */
+
+.exp-container {
+  display: flex;
+  max-width: 80%;
+}
+
+.exp-text {
+  flex-basis: 100%;
+  font-size: 2rem;
+
+  padding-left: 1em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #132959;
+  color: rgb(236, 236, 236);
+}
+.exp-text p {
+  padding-top: 1em;
+  font-size: 1.5rem;
+  max-width: 40ch;
+}
+
+.btn-dark {
+  align-self: flex-start;
+  margin-top: 1em;
+  font-size: 1.7rem;
+  padding: .4em .8em;
+  border: 2px solid rgb(212, 2, 2);
+  border-radius: 4px;
+  color: white;
+  background-color: #132959;
+  transition: all .3s;
+}
+
+.exp-text button:hover {
+  background-color: rgb(212, 2, 2);
+}
+
+.exp-container-reverse {
+  display: flex;
+  max-width: 80%;
+  flex-direction: row-reverse;
+}
+
+.bg-wht {
+  background-color: #EBEFF4;
+  color: #132959;
+}
+
+.btn-wht {
+  align-self: flex-start;
+  margin-top: 1em;
+  font-size: 1.7rem;
+  padding: .4em .8em;
+  border: 2px solid rgb(212, 2, 2);
+  border-radius: 4px;
+  color: #132959;
+  background-color: #F4F5F9;
+  transition: all .3s;
+}
+
+.btn-wht:hover {
+  color: #F4F5F9;
+}
+
+.mg-bot {
+  margin-bottom: 6em;
+}
+
+
+
+/* TODO */
+/* Make Footer */
+/* Make It Responsive */
+/* Add Animations */
+/* Clean up spaghetti code lmao  */
