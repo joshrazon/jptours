@@ -4,6 +4,4 @@
 
 ## TODO
 - Make it responsive
-- Create Footer
 - Add animations
-- Clean up spaghetti code
