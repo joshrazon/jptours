@@ -167,6 +167,11 @@ ul li {
   font-size: 1.2rem;
 }
 
+/* All btn */
+button {
+  cursor: pointer;
+}
+
 /* Card btn */
 .card-btn {
   align-self: center;
