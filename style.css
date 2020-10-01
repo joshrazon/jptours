@@ -290,6 +290,7 @@ button {
   color: #F4F5F9;
 }
 
+/* Footer */
 footer {
   height: 8vh;
   padding-top: 1em;
@@ -311,6 +312,12 @@ footer p {
   padding-top: .6em;
   color: rgb(139, 139, 139);
 }
+
+footer a:link, footer a:visited {
+  color: #EBEFF4;
+}
+
+
 
 
 
