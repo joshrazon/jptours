@@ -13,8 +13,16 @@
 }
 
 /* Utils */
+.mg-bot-sm {
+  margin-bottom: 1.5em;
+}
+
 .mg-bot {
-  margin-bottom: 6em;
+  margin-bottom: 7em;
+}
+
+.pad-top-sm {
+  padding-top: 1.8em;
 }
 
 /* Hero & Nav*/
@@ -73,27 +81,29 @@ ul li {
 .services {
   display: grid;
   grid-template-columns: 15% 1fr 1fr 1fr;
+  grid-template-rows: 35vh;
   column-gap: 2em;
   grid-template-rows: 500px;
   max-width: 80%;
   margin: auto;
+  overflow: hidden;
 }
 
 .services-text {
   grid-column: 1/3;
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.2rem;
-  max-width: 50ch;
+  max-width: 60ch;
+  flex-shrink: 1;
 }
 
 .services-text h1 {
-  margin-bottom: 1.2em;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
   padding-bottom: .5em;
   border-bottom: 5px solid rgb(212, 2, 2);
 }
 
 .services-text p {
-  font-size: 1rem;
+  font-size: clamp(.9rem, .9vw, 1.2rem);
 }
 
 .services-img {
@@ -102,6 +112,7 @@ ul li {
 
 .services-img img {
   max-width: 100%;
+  min-height: 100%;
 }
 
 /* Group */
@@ -117,8 +128,8 @@ ul li {
   display: flex;
   flex-direction: column;
   max-height: 100%;
-  border: 1px solid rgb(119, 119, 119);
   border-radius: 4px;
+  box-shadow: 2px 2px 10px grey;
   background-color: #F4F5F9;
 }
 
@@ -213,7 +224,7 @@ ul li {
   align-self: stretch;
   justify-self: stretch;
   width: 60ch;
-  padding-left: 1em;
+  padding: 0 1em;
   display: flex;
   flex-direction: column;
   justify-content: center;
