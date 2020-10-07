@@ -358,6 +358,11 @@ footer a:link, footer a:visited {
     width: 900px;
   }
 
+  nav img {
+    width: 48px;
+    height: 48px;
+  }
+
   .exp-text {
     width: 100%;
   }
