@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+.main {
+  min-height: 100%;
+  margin-bottom: -100px;
+}
+
 /* Layouts */
 .container {
   display: flex;
@@ -243,7 +252,7 @@ button {
 .exp-text p {
   max-width: 40ch;
   padding-top: 1em;
-  font-size: 1.2rem;
+  font-size: 19.2px;
 }
 
 .exp-container-reverse {
@@ -260,7 +269,7 @@ button {
   border-radius: 4px;
   padding: .4em .8em;
   background-color: #132959;
-  font-size: 1.7rem;
+  font-size: 27.2px;
   color: white;
   transition: all .3s;
 }
@@ -291,8 +300,12 @@ button {
 }
 
 /* Footer */
+footer, .push {
+  height: 100px;
+}
+
 footer {
-  height: 8vh;
+  min-height: 100px;
   padding-top: 1em;
   display: flex;
   flex-direction: column;
@@ -317,8 +330,42 @@ footer a:link, footer a:visited {
   color: #EBEFF4;
 }
 
+@media screen and (max-width: 1500px) {
+  .exp-text h2 {
+    font-size: calc(25px + (28.8 - 25) * ((100vw - 320px) / (1500 - 320)));
+    padding-top: 2em;
+  }
 
+  .exp-text p {
+    font-size: calc(14px + (19.2 - 14) * ((100vw - 320px) / (1500 - 320)));
+  }
 
+  .btn-dark, .btn-wht {
+    font-size: calc(18px + (27.2 - 18) * ((100vw - 320px) / (1500 - 320)));
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .exp-container-reverse, .exp-container {
+    display: flex;
+    max-width: 80%;
+    flex-direction: column-reverse;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  img {
+    width: 900px;
+  }
+
+  .exp-text {
+    width: 100%;
+  }
+
+  .exp-text p {
+    max-width: 76ch;
+  }
+}
 
 
 /* TODO */
