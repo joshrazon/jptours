@@ -2,6 +2,3 @@
 
 ## Brochure Website
 
-## TODO
-- Make it responsive
-- Add animations
