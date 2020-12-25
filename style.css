@@ -34,7 +34,7 @@ html, body {
   padding-top: 1.8em;
 }
 
-/* Hero & Nav*/
+/* Nav*/
 nav {
   display: flex;
   align-items: center;
@@ -44,42 +44,32 @@ nav {
   width: 100%;
 }
 
-nav img {
-  margin-left: 3rem;
-}
-
-ul {
-  flex-grow: 1;
-  display: flex;
-  justify-content: flex-end;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color:rgb(236, 236, 236);
+nav ul {
   list-style-type: none;
 }
 
-ul li {
-  margin-right: 2rem;
-  font-size: 1.3rem;
+nav ul li {
+  padding: 5px 0;
 }
 
-ul li:hover {
-  cursor: pointer;
-  color: rgb(212, 2, 2);
-}
-
-a,
-a:link,
-a:visited,
-a:active,
-a:focus {
-  text-decoration: none;
-  cursor: pointer;
+.nav-links {
+  display: flex;
   color: white;
+  font-family: "Open Sans";
+  justify-content: space-evenly;
+  width: 30%;
 }
 
-a:hover {
-  color: white;
+.nav-links li {
+  font-size: 1.2em;
+  font-weight: 600;
 }
+
+.bars {
+  display: none;
+}
+
+/* Hero */
 
 .hero-section {
   background-image: url(../img/hero-img2.jpg);
@@ -297,28 +287,6 @@ footer a:link, footer a:visited {
   color: #EBEFF4;
 }
 
-label #btn,
-label #cancel {
-  color: white;
-  font-size: 30px;
-  line-height: 80px;
-  cursor: pointer;
-  float: right;
-  margin-right: 40px;
-  display: none;
-  
-   
-}
-
-#toggle {
-  display: none;
-}
-
-
-
-
-
-
 @media screen and (max-width: 1500px) {
   .exp-text h2 {
     font-size: calc(25px + (28.8 - 25) * ((100vw - 320px) / (1500 - 320)));
@@ -335,6 +303,17 @@ label #cancel {
 }
 
 @media screen and (max-width: 1320px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .bars {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
   .exp-container-reverse, .exp-container {
     display: flex;
     max-width: 80%;
@@ -359,100 +338,19 @@ label #cancel {
   .exp-text p {
     max-width: 76ch;
   }
-}
-
-
-/* media query to fix mobile screen etc */
-
-
-@media screen and (max-width: 580px) {
-
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  label #btn {
-    display: block;
-    margin-right: -2rem;
-  }
-
-  label #cancel {
-    margin-right: -2rem;
-  }
-
-  
-  
-
-  
- 
-  nav ul {
-    position: fixed;
-    width: 100%;
-    height: 45%;
-    top: 50px;
-    left: -100%;
-    text-align: center;
-    transition: .5s;
-    z-index: 10;
-    display: block;
-    background: black;
-    margin-top: 2rem;
-    text-transform: uppercase;
-  }
-
- 
-nav ul li {
-  
-  margin: 40px 0;
-  line-height: 30px;
-  
-}
-
-#toggle:checked ~ ul {
-  left: 0;
-}
-
-#toggle:checked ~ label #btn {
-  display: none;
-}
-
-#toggle:checked ~ label #cancel {
-  display: block;
-}
-
-
-/* parallax */
   .parallax h1 {
     font-size: 30px;
   }
 
-  /* hero text */
-  .hero-text {
-    margin-left: 0.5rem;
-  }
- 
-/* services  */
   .services {
     display: block;
   }
+
   .services-text {
     margin-bottom: 2rem;
   }
-
-  nav img {
-    margin-bottom: -0.5rem;
-    margin-left: -2rem;
-  }
-
-
- 
 }
-
-
-  
-
-
+/* services  */
 /* TODO */
 /* Make It responsive */
 /* Add Animations */
