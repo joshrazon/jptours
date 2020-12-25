@@ -12,6 +12,7 @@ html, body {
 .main {
   min-height: 100%;
   margin-bottom: -100px;
+  position: relative;
 }
 
 /* Layouts */
@@ -72,7 +73,7 @@ nav ul li {
 /* Hero */
 
 .hero-section {
-  background-image: url(../img/hero-img2.jpg);
+  background-image: url(./img/hero-img2.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -163,7 +164,7 @@ button {
     rgba(0, 0, 0, 0.2), 
     rgba(0, 0, 0, 0.2)
     ), 
-  url(../img/hero-img2.jpg);
+  url(./img/hero-img2.jpg);
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -305,6 +306,18 @@ footer a:link, footer a:visited {
 @media screen and (max-width: 1320px) {
   .nav-links {
     display: none;
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 100vh;
+    padding: 20px;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
   }
   
   .bars {
