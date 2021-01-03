@@ -5,15 +5,15 @@
   box-sizing: border-box;
 }
 
-a,
-a:link,
-a:active,
-a:visited {
+.nav-links a,
+.nav-links a:link,
+.nav-links a:active,
+.nav-links a:visited {
   color: #fff;
   text-decoration: none;
 }
 
-a:hover {
+.nav-links a:hover {
   color: rgb(212, 2, 2);
 }
 
