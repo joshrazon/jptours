@@ -1,10 +1,10 @@
-# JP Tours Brochure [Website](http://razon-josh.me/jptours/)
+# JP Tours Brochure [Website](https://joshrazon.github.io/jptours/)
 
 by: *Joshua Razon*
 
 Responsive landing page for a fictional Japan tour company
 
-Project [Link](http://razon-josh.me/jptours/)
+Project [Link](https://joshrazon.github.io/jptours/)
 
 ## Tools Used
 
@@ -12,4 +12,4 @@ Project [Link](http://razon-josh.me/jptours/)
 - CSS
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit)
+[MIT](https://choosealicense.com/licenses/mit/)
