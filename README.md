@@ -12,4 +12,4 @@ Project [Link](http://razon-josh.me/jptours/)
 - CSS
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit)
